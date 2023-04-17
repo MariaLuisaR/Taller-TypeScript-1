@@ -1,8 +1,8 @@
 import {Serie} from './serie.js';
 import {series} from './data.js';
 
-let serieTab: HTMLElement = document.getElementById('series');
-let seasonAvg: HTMLElement = document.getElementById('avg');
+let serieTab: HTMLElement = document.getElementById('series')!;
+let seasonAvg: HTMLElement = document.getElementById('avg')!;
 seasonAvg.innerHTML = `Seasons average: ${calcSeasonAvg()}`;
 genSeriesTable(series);
 
